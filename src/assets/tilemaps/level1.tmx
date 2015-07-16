@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="10" height="10" tilewidth="16" tileheight="16">
+ <tileset firstgid="1" name="tiles" tilewidth="16" tileheight="16">
+  <image source="../../../../../Downloads/2d-topdown/assets/images/tiles.png" width="705" height="1280"/>
+ </tileset>
+ <layer name="backgroundLayer" width="10" height="10">
+  <data encoding="csv">
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96
+</data>
+ </layer>
+ <layer name="blockingLayer" width="10" height="10">
+  <data encoding="csv">
+221,1632,1632,1632,1632,1632,1632,1632,1632,1632,
+221,0,0,0,0,1632,1632,1632,1632,221,
+221,0,0,0,0,0,0,0,221,221,
+221,0,0,0,0,0,0,0,0,221,
+221,0,0,0,0,0,0,0,0,221,
+221,1632,1632,0,0,0,0,0,0,221,
+221,221,221,221,221,1632,0,0,0,221,
+221,0,0,0,0,0,0,0,0,221,
+221,0,0,0,0,0,0,0,0,221,
+221,221,221,221,221,221,221,221,221,221
+</data>
+ </layer>
+ <objectgroup name="objectsLayer" width="10" height="10">
+  <object type="playerStart" gid="2918" x="20" y="132">
+   <properties>
+    <property name="type" value="playerStart"/>
+   </properties>
+  </object>
+  <object type="item" gid="3435" x="120" y="76">
+   <properties>
+    <property name="sprite" value="bluecup"/>
+    <property name="type" value="item"/>
+   </properties>
+  </object>
+  <object type="door" gid="3218" x="30" y="44">
+   <properties>
+    <property name="sprite" value="browndoor"/>
+    <property name="targetTilemap" value="level2"/>
+    <property name="targetX" value="20"/>
+    <property name="targetY" value="30"/>
+    <property name="type" value="door"/>
+   </properties>
+  </object>
+  <object type="item" gid="3435" x="81" y="83">
+   <properties>
+    <property name="sprite" value="bluecup"/>
+    <property name="type" value="item"/>
+   </properties>
+  </object>
+  <object type="item" gid="3435" x="65" y="57">
+   <properties>
+    <property name="sprite" value="bluecup"/>
+    <property name="type" value="item"/>
+   </properties>
+  </object>
+  <object type="item" gid="3435" x="111" y="100">
+   <properties>
+    <property name="sprite" value="bluecup"/>
+    <property name="type" value="item"/>
+   </properties>
+  </object>
+  <object type="item" gid="3435" x="113" y="134">
+   <properties>
+    <property name="sprite" value="bluecup"/>
+    <property name="type" value="item"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
