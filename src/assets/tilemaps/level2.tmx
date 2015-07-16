@@ -75,7 +75,7 @@
   <object gid="441" x="108" y="148">
    <properties>
     <property name="sprite" value="browndoor"/>
-    <property name="targetTilemap" value="level2"/>
+    <property name="targetTilemap" value="level3"/>
     <property name="targetX" value="20"/>
     <property name="targetY" value="30"/>
     <property name="type" value="door"/>

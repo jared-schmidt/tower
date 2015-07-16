@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="10" height="20" tilewidth="16" tileheight="16">
+ <tileset firstgid="1" name="tiles" tilewidth="16" tileheight="16">
+  <image source="../../../../Projects/crap/src/assets/images/tiles.png" width="705" height="1280"/>
+ </tileset>
+ <tileset firstgid="3521" name="tiles" tilewidth="16" tileheight="16">
+  <image source="../images/tiles.png" width="705" height="1280"/>
+ </tileset>
+ <layer name="backgroundLayer" width="10" height="20">
+  <data encoding="csv">
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,95,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96
+</data>
+ </layer>
+ <layer name="blockingLayer" width="10" height="20">
+  <data encoding="csv">
+225,225,225,225,225,225,225,225,225,225,
+225,225,0,225,225,0,0,0,0,225,
+225,0,0,0,0,0,0,0,0,225,
+225,0,225,0,225,0,0,0,0,225,
+225,0,225,225,225,225,225,225,0,225,
+225,0,0,0,225,0,0,0,0,225,
+225,225,225,225,225,0,0,0,0,225,
+225,0,0,0,0,0,0,0,0,225,
+225,0,0,0,225,225,225,225,225,225,
+225,0,0,0,0,0,0,0,0,225,
+225,225,225,225,225,0,0,225,225,225,
+225,0,0,0,0,0,0,0,0,225,
+225,0,0,0,225,225,225,225,225,225,
+225,0,0,0,0,0,0,0,0,225,
+225,0,0,0,0,0,0,0,0,225,
+225,225,225,225,225,225,225,225,0,225,
+225,0,0,0,0,0,0,0,0,225,
+225,0,0,0,0,0,0,0,0,225,
+225,0,0,0,0,0,0,0,0,225,
+225,225,225,225,225,225,225,225,225,225
+</data>
+ </layer>
+ <objectgroup name="objectsLayer" width="10" height="20">
+  <object type="door" gid="441" x="50" y="96">
+   <properties>
+    <property name="sprite" value="browndoor"/>
+    <property name="targetTilemap" value="level4"/>
+    <property name="type" value="door"/>
+   </properties>
+  </object>
+  <object type="item" gid="3435" x="36" y="43">
+   <properties>
+    <property name="sprite" value="bluecup"/>
+    <property name="type" value="item"/>
+   </properties>
+  </object>
+  <object type="item" gid="3435" x="121" y="43">
+   <properties>
+    <property name="sprite" value="bluecup"/>
+    <property name="type" value="item"/>
+   </properties>
+  </object>
+  <object type="item" gid="3435" x="88" y="40">
+   <properties>
+    <property name="sprite" value="bluecup"/>
+    <property name="type" value="item"/>
+   </properties>
+  </object>
+  <object type="item" gid="3435" x="88" y="170">
+   <properties>
+    <property name="sprite" value="bluecup"/>
+    <property name="type" value="item"/>
+   </properties>
+  </object>
+  <object type="item" gid="3435" x="15" y="206">
+   <properties>
+    <property name="sprite" value="bluecup"/>
+    <property name="type" value="item"/>
+   </properties>
+  </object>
+  <object type="item" gid="3435" x="84" y="229">
+   <properties>
+    <property name="sprite" value="bluecup"/>
+    <property name="type" value="item"/>
+   </properties>
+  </object>
+  <object type="item" gid="3435" x="114" y="283">
+   <properties>
+    <property name="sprite" value="bluecup"/>
+    <property name="type" value="item"/>
+   </properties>
+  </object>
+  <object type="item" gid="3435" x="65" y="285">
+   <properties>
+    <property name="sprite" value="bluecup"/>
+    <property name="type" value="item"/>
+   </properties>
+  </object>
+  <object type="item" gid="3435" x="92" y="289">
+   <properties>
+    <property name="sprite" value="bluecup"/>
+    <property name="type" value="item"/>
+   </properties>
+  </object>
+  <object type="item" gid="3435" x="122" y="105">
+   <properties>
+    <property name="sprite" value="bluecup"/>
+    <property name="type" value="item"/>
+   </properties>
+  </object>
+  <object type="playerStart" gid="6438" x="29" y="285">
+   <properties>
+    <property name="type" value="playerStart"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

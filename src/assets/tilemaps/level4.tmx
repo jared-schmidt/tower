@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="10" height="20" tilewidth="16" tileheight="16">
+ <tileset firstgid="1" name="tiles" tilewidth="16" tileheight="16">
+  <image source="../../../../Projects/crap/src/assets/images/tiles.png" width="705" height="1280"/>
+ </tileset>
+ <tileset firstgid="3521" name="tiles" tilewidth="16" tileheight="16">
+  <image source="../images/tiles.png" width="705" height="1280"/>
+ </tileset>
+ <layer name="backgroundLayer" width="10" height="20">
+  <data encoding="csv">
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96
+</data>
+ </layer>
+ <layer name="blockingLayer" width="10" height="20">
+  <data encoding="csv">
+229,229,229,229,229,229,229,229,229,229,
+229,0,0,229,0,0,0,0,0,229,
+229,229,229,229,0,0,229,229,229,229,
+229,0,0,0,0,0,0,0,0,229,
+229,0,0,0,0,0,0,0,0,229,
+229,229,229,229,0,0,229,229,229,229,
+229,0,0,0,0,0,0,0,0,229,
+229,0,0,0,0,0,0,0,0,229,
+229,229,229,229,0,0,229,229,229,229,
+229,0,0,0,0,0,0,0,0,229,
+229,0,0,0,0,0,0,0,0,229,
+229,229,229,229,0,0,229,229,229,229,
+229,0,0,0,0,0,0,0,0,229,
+229,0,0,0,0,0,0,0,0,229,
+229,229,229,229,0,0,229,229,229,229,
+229,0,0,0,0,0,0,0,0,229,
+229,0,0,0,0,0,0,0,0,229,
+229,229,229,229,0,0,229,229,229,229,
+229,0,0,229,0,0,229,0,0,229,
+229,229,229,229,229,229,229,229,229,229
+</data>
+ </layer>
+ <objectgroup name="objectsLayer" width="10" height="20">
+  <object type="playerStart" gid="6438" x="72" y="298">
+   <properties>
+    <property name="type" value="playerStart"/>
+   </properties>
+  </object>
+  <object type="room" x="98" y="242" width="43" height="28">
+   <properties>
+    <property name="type" value="room"/>
+   </properties>
+  </object>
+  <object type="room" x="18" y="242" width="44" height="28">
+   <properties>
+    <property name="type" value="room"/>
+   </properties>
+  </object>
+  <object type="room" x="17" y="193" width="44" height="28">
+   <properties>
+    <property name="type" value="room"/>
+   </properties>
+  </object>
+  <object type="room" x="97" y="194" width="44" height="28">
+   <properties>
+    <property name="type" value="room"/>
+   </properties>
+  </object>
+  <object type="room" x="18" y="146" width="44" height="28">
+   <properties>
+    <property name="type" value="room"/>
+   </properties>
+  </object>
+  <object type="room" x="98" y="146" width="44" height="28">
+   <properties>
+    <property name="type" value="room"/>
+   </properties>
+  </object>
+  <object type="room" x="17" y="97" width="44" height="28">
+   <properties>
+    <property name="type" value="room"/>
+   </properties>
+  </object>
+  <object type="room" x="98" y="98" width="44" height="28">
+   <properties>
+    <property name="type" value="room"/>
+   </properties>
+  </object>
+  <object type="room" x="97" y="49" width="44" height="28">
+   <properties>
+    <property name="type" value="room"/>
+   </properties>
+  </object>
+  <object type="room" x="18" y="49" width="44" height="28">
+   <properties>
+    <property name="type" value="room"/>
+   </properties>
+  </object>
+  <object type="door" gid="441" x="96" y="32">
+   <properties>
+    <property name="isLocked" value="true"/>
+    <property name="sprite" value="browndoor"/>
+    <property name="targetTilemap" value="null"/>
+    <property name="type" value="door"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
