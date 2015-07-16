@@ -179,6 +179,7 @@
                 this.player.health -= 1;
                 if (this.player.health <= 0){
                     currentLevel = 1;
+                    points = 0;
                     this.game.state.start('gameOver');
                 }
             }
