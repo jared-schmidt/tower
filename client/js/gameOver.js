@@ -26,33 +26,28 @@
                 });
             text.anchor.set(0.5);
 
-            // TODO: Cancel button still submits
-            // TODO: Way to check if text in text box?
-            bootbox.prompt({
-                closeButton: false,
-                title: "Enter your name for leaderboard",
-                buttons: {
-                    confirm: {
-                        label: 'Submit',
+            if (self.score){
+                bootbox.prompt({
+                    closeButton: false,
+                    title: "Enter your name for leaderboard",
+                    buttons: {
+                        confirm: {
+                            label: 'Submit',
+                        }
+                    },
+                    callback: function(result){
+                        console.log(result);
+                        if (result){
+                            var obj = {
+                                name: result,
+                                score: self.score,
+                                level: self.level
+                            };
+                            Meteor.call('addScore', obj);
+                        }
                     }
-                },
-                callback: function(result){
-                    console.log(result);
-                    if (result){
-                        var obj = {
-                            name: result,
-                            score: self.score,
-                            level: self.level
-                        };
-                        Meteor.call('addScore', obj);
-                    }
-                }
-            });
-
-            // bootbox.prompt('Your name', function(result) {
-            //
-            //
-            // });
+                });
+            };
 
             this.input.onDown.add(this.onDown, this);
         },

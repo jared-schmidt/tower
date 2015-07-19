@@ -6,7 +6,14 @@
 
 meteor-platform
 
-robertlowe:meteor-phaser
+#robertlowe:meteor-phaser
+
+meteorhacks:npm
+mquandalle:bower
+
 twbs:bootstrap
 fezvrasta:bootstrap-material-design
 mizzao:bootboxjs
+
+
+npm-container

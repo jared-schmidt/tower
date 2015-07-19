@@ -1,6 +1,12 @@
 (function() {
     'use strict';
 
+    var swipeCoordX,
+        swipeCoordY,
+        swipeCoordX2,
+        swipeCoordY2,
+        swipeMinDistance = 100
+
     var playerSpeed = 100;
 
     var currentLevel = 1;
@@ -104,6 +110,31 @@
         create: function() {
             this.input.onDown.add(this.onInputDown, this);
             this.loadMap('tower');
+
+            // TODO: Moves very slow. Mouse still works
+            // TODO: Maybe just add key in a new card
+
+        //     this.game.input.onTap.add(function(pointer) {
+        //        var coordX = pointer.x;
+        //        var coordY = pointer.y;
+           //
+        //        var height = this.game.height;
+        //        var width = this.game.width;
+           //
+        //        if (height/2 > coordY){
+        //            console.log("top");
+        //            this.player.body.velocity.y -= playerSpeed;
+        //        } else {
+        //            console.log("bottom");
+        //            this.player.body.velocity.y += playerSpeed;
+        //        }
+        //        if (width/2 > coordX){
+        //            console.log("right");
+        //        } else {
+        //            console.log("left");
+        //        }
+        //    }, this);
+
         },
         loadMap: function(lvl) {
             this.map = this.game.add.tilemap(lvl);

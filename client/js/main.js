@@ -1,8 +1,10 @@
 window.addEventListener('load', function () {
   'use strict';
 
+  // var Phaser = Meteor.npmRequire('phaser');
+
   var ns = window['crap'];
-  var game = new Phaser.Game(150, 160, Phaser.AUTO, 'crap-game');
+  var game = new Phaser.Game(150, 150, Phaser.AUTO, 'crap-game');
   game.state.add('boot', ns.Boot);
   game.state.add('preloader', ns.Preloader);
   game.state.add('menu', ns.Menu);
