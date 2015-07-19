@@ -2,6 +2,7 @@
 *.db
 node_modules/
 bower_components/
+lib/.meteor/
 
 # Logs
 logs
