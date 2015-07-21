@@ -98,8 +98,6 @@
                 item.properties['hasKey'] = true;
                 item.properties['hasMonster'] = false;
             }
-            item.properties['sprite'] = 'red';
-
         },
         create: function() {
             this.input.onDown.add(this.onInputDown, this);
@@ -126,6 +124,7 @@
             this.game.camera.follow(this.player);
 
             this.cursors = this.game.input.keyboard.createCursorKeys();
+
             // this.spaceKey = this.game.input.keyboard.addKey(Phaser.Keyboard.S);
 
             var healthTextKey = this.game.add.text(1, 1, 'Health:', textStyleKey);

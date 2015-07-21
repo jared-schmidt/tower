@@ -1,0 +1,8 @@
+{
+  "name": "my-app",
+  "version": "0.0.1",
+  "dependencies": {
+    "phaser": "2.3.0"
+  },
+  "private": true
+}
