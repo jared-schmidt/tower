@@ -15,7 +15,7 @@ if (Meteor.isServer) {
     });
 
     Meteor.publish('scores', function(){
-        return Scores.find({score: {$gt: 0}}, {sort: {level: -1, score: -1}, limit: 10});
+        return Scores.find({name: {$ne: null},score: {$gt: 0}}, {sort: {level: -1, score: -1}, limit: 10});
     });
 
     Meteor.methods({

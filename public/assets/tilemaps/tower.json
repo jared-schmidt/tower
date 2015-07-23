@@ -186,6 +186,36 @@
                  "width":0,
                  "x":96,
                  "y":32
+                }, 
+                {
+                 "gid":3435,
+                 "height":0,
+                 "name":"",
+                 "properties":
+                    {
+                     "sprite":"bluecup",
+                     "type":"item"
+                    },
+                 "type":"item",
+                 "visible":true,
+                 "width":0,
+                 "x":127,
+                 "y":305
+                }, 
+                {
+                 "gid":3435,
+                 "height":0,
+                 "name":"",
+                 "properties":
+                    {
+                     "sprite":"bluecup",
+                     "type":"item"
+                    },
+                 "type":"item",
+                 "visible":true,
+                 "width":0,
+                 "x":18,
+                 "y":304
                 }],
          "opacity":1,
          "type":"objectgroup",
